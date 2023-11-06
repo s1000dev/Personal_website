@@ -1,0 +1,52 @@
+// Container
+.container {
+	max-width: ($containerWidth + $containerPadding) + px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 $containerSidePadding + px;
+
+	@media (max-width: $breakpoint1450) {
+		max-width: 1100px;
+	}
+
+	@media (max-width: $breakpoint992) {
+		max-width: 970px;
+	}
+
+	@media (max-width: $breakpoint768) {
+		max-width: 740px;
+	}
+
+	@media (max-width: $breakpoint480) {
+		max-width: none;
+	}
+}
+
+// Body & Locked
+body {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	font-size: 16px;
+	background-color: #181818;
+	color: #fff;
+	line-height: 140%;
+	&.locked {
+		overflow: hidden;
+	}
+}
+
+a{
+	cursor: pointer;
+}
+
+// Animations
+// Fade
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

@@ -269,6 +269,13 @@ if(width < 768){
 		{ opacity: 0,},
 		1.5,
 	).fromTo(
+		'.fulllogo',
+		{
+			
+		},
+		{ zIndex: '-4',},
+		2,
+	).fromTo(
 		'.logo',
 		{
 			opacity: 0,
